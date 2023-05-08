@@ -1,0 +1,59 @@
+
+-- SUBSTRING() Function:==>
+
+-- Concatenate Function:==>
+
+------------------------------------------------------------
+
+-- The SUBSTRING() function extracts some characters from a string.
+
+-- Syntax:-
+
+SUBSTRING(string, start, length)
+
+---------------------------------------------
+
+-- Example 01:---------
+
+SELECT SUBSTRING('SQL Tutorial', 1, 6) AS ExtractString;
+
+-- Output - 
+
+SQL Tu
+
+-- NOTE:- Start from 1 index and take upto 6 length
+
+-- In SQl, Index start from 1
+
+--------------------------------------------------
+
+-- Example 02:---------
+
+-- title - is column
+
+-- Books - is Table
+
+
+select substring(title, 1, 10)
+AS short_title
+from Books;
+
+-- It will take up to 10 character
+
+----------------------------------------------------
+
+-- If you want to Concatenate ===> ...
+
+
+select 
+concat(substring(title, 1, 10), '...')
+AS short_title
+from Books;
+
+
+
+
+
+
+
+
